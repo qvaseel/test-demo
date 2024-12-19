@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <h1>__('Авторизация')</h1>
+    <h1>{{__('Авторизация')}}</h1>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('requests', function (Blueprint $table) {
             $table->id();
             $table->text('problem');
-            $table->date('repair_date');
+            $table->date('repair_date')->nullable();;
             $table->foreignId('user_id')
                 ->nullable()
                 ->constrained()
